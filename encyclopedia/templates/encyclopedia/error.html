@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Page not found
+{% endblock %}
+
+{% block body %}
+    <h1>Page Not Found</h1>
+    <p>
+        <p>
+            File does not exist.
+        </p>
+        No Encyclopedia entries on {{ title }}. Would you like to <a href="">Create a page</a>?
+    </p>
+{% endblock %}

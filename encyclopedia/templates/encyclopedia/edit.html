@@ -1,0 +1,15 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+    Edit {{ title }}
+{% endblock %}
+
+{% block body %}
+    <form action="{% url 'search' %}" method="get" accept-charset="utf-8">
+        <input type="hidden" name="title" value="{{ title }}" />
+        <textarea name="content">
+            {{ file }}
+        </textarea>
+        <input type="submit" value="Save" />
+    </form>
+{% endblock %}

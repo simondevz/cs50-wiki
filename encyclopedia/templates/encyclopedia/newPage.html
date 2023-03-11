@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create a New Page
+{% endblock %}
+
+{% block body %}
+    <h1>Create a New Page</h1>
+    <form action="wiki/" method="get" accept-charset="utf-8">
+        <input type="text" name="q" placeholder="Title" />
+        <textarea name="content" placeholder="text"></textarea>
+        <input type="submit"/>
+    </form>
+{% endblock %}
